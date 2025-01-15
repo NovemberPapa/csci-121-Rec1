@@ -11,6 +11,19 @@ public class BasicInput {
 
         System.out.println("Enter integer:");
         userInt = scnr.nextInt();
+        System.out.println("Enter double:");
+        userDouble = scnr.nextDouble();
+        System.out.println("Enter character:");
+        userString = scnr.next();
+        userChar = userString.charAt(0);
+        System.out.println("Enter string:");
+        userString = scnr.next();
+        System.out.println(userInt + " " + userDouble + " " + userChar + " " + userString);
+        System.out.println(userString + " " + userChar + " " + userDouble + " " + userInt);
+        userInt = (int) userDouble;
+        System.out.println(userDouble + " cast to an integer is " + userInt);
+
+
 
         // TODO (1): Finish reading other items into variables, then output the four values on a single line separated by a space
 
